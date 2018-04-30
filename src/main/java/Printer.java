@@ -21,4 +21,19 @@ public class Printer {
     public int getToner(){
         return this.toner;
     }
+
+    public int acceptArgs(int copies, int pages) {
+        int total = (copies * pages);
+        if (total < this.paper) {
+            this.paper -= total;
+            this.toner -= total;
+            return this.paper;
+        }
+            return this.paper;
+    }
+
+    public int fillPrinter(){
+        this.paper = 400;
+        return this.paper;
+    }
 }
