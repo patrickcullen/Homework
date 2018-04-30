@@ -31,4 +31,10 @@ public class WaterbottleTest {
     public void isEmpty() {
         assertEquals(0, testWaterbottle.Empty(), 0.01);
     }
+
+    @Test
+    public void isFull() {
+        assertEquals(100, testWaterbottle.Fill(), 0.01);
+    }
+
 }
