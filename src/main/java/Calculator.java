@@ -1,9 +1,9 @@
 public class Calculator {
     private String name;
-    private int num1;
-    private int num2;
+    private double num1;
+    private double num2;
 
-    public Calculator(String name, int num1, int num2) {
+    public Calculator(String name, double num1, double num2) {
         this.name = name;
         this.num1 = num1;
         this.num2 = num2;
@@ -13,12 +13,28 @@ public class Calculator {
         return this.name;
     }
 
-    public int getNum1(){
+    public double getNum1(){
         return this.num1;
     }
 
-    public int getNum2(){
+    public double getNum2(){
         return this.num2;
+    }
+
+    public double Add(){
+        return num1 + num2;
+    }
+
+    public double Subtract(){
+        return num1 - num2;
+    }
+
+    public double Multiply(){
+        return num1 * num2;
+    }
+
+    public double Divide(){
+        return num1 / num2;
     }
 }
 
